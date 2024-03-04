@@ -15,6 +15,9 @@ The adjustable parameters in the `main` function are:
 `NUM_AGENTS` - Total number of agents in the group. Given the pairwise interactions, this should be an even integer (tested up to N = 16).
 `NUM_ROUNDS` - 
 
+## Results
+Preliminary results showed worse performance... 
+![Plot](results/4agents_8rounds_temp12.png)
 
 ## Requirements
 ### Dependencies
