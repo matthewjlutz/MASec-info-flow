@@ -16,10 +16,9 @@ The adjustable parameters in the `main` function are:
 `NUM_ROUNDS` - 
 
 ## Results
-![Plot](results/4agents_8rounds_temp12.png)
-|                                                             |                                                              |
-|-------------------------------------------------------------|--------------------------------------------------------------|
-| <img width="100%" src="results/4agents_8rounds_temp12.png"> | <img width="100%" src="results/16agents_8rounds_temp12.png"> |
+
+|-------------------------------------------------------------|---------------------------------------------------------------|
+| <img width="100%" src="results/4agents_8rounds_temp12.png"> | <img width="100%" src="results/16agents_8_rounds_temp12.png"> |
 
 ## Requirements
 ### Dependencies
