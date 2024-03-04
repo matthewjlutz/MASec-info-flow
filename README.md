@@ -18,10 +18,10 @@ Adjustable parameters in the `main` function are:
 
 ## Results
 
-|                     N = 4 Agents                            |                         N = 16 Agents                         |                       |
-| ----------------------------------------------------------- | ------------------------------------------------------------- | --------------------- |
-| <img width="100%" src="results/4agents_8rounds_temp12.png"> | <img width="100%" src="results/16agents_8_rounds_temp12.png"> |   Temperature = 1.2   |
-|                  Temperature = 1.2                          |                        Temperature = 1.2
+|                     N = 4 Agents                            |                         N = 16 Agents                         |                  |
+| ----------------------------------------------------------- | ------------------------------------------------------------- | ---------------- |
+| <img width="100%" src="results/4agents_8rounds_temp02.png"> | <img width="100%" src="results/16agents_8round_temp02.png">   |    Temp = 0.2    |
+| <img width="100%" src="results/4agents_8rounds_temp12.png"> | <img width="100%" src="results/16agents_8_rounds_temp12.png"> |    Temp = 1.2    |
 
 
 ## Requirements
