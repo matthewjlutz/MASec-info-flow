@@ -12,7 +12,7 @@ API Integration: Utilizes OpenAI's GPT API to simulate agent reasoning, making t
 
 ## Requirements
 ### Dependencies
-This project requires `Python 3.x` and the packages ` requests, matplotlib' and 'numpy `. These can be installed using pip or another package manager:
+This project requires Python 3 and the packages `requests`, `matplotlib`, and `numpy`. These can be installed using pip or another package manager:
 
 ```
 pip install requests matplotlib numpy
