@@ -12,16 +12,16 @@ The project consists of three Python scripts:
 
 ### Parameters
 Adjustable parameters in the `main` function are:
-* `NUM_AGENTS` - Total number of agents in the group. Given the pairwise interactions, this should be an even integer (tested up to N = 16).
+* `NUM_AGENTS` - Group size. Given the pairwise interactions, this should be an even integer (tested up to N = 16).
 * `NUM_ROUNDS` - Number of discussion rounds per simulation (tested with 8 rounds).
 * `NUM_SIMULATIONS` -  
 
 ## Results
 
-|                     N = 4 Agents                            |                         N = 16 Agents                         |
-| ----------------------------------------------------------- | ------------------------------------------------------------- |
-| <img width="100%" src="results/4agents_8rounds_temp12.png"> | <img width="100%" src="results/16agents_8_rounds_temp12.png"> |
-| ----------------------------------------------------------- | ------------------------------------------------------------- |
+|                     N = 4 Agents                            |                         N = 16 Agents                         |                       |
+| ----------------------------------------------------------- | ------------------------------------------------------------- | --------------------- |
+| <img width="100%" src="results/4agents_8rounds_temp12.png"> | <img width="100%" src="results/16agents_8_rounds_temp12.png"> |   Temperature = 1.2   |
+|                  Temperature = 1.2                          |                        Temperature = 1.2
 
 
 ## Requirements
