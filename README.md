@@ -1,4 +1,4 @@
-# Mapping information spread in LLM groups
+# Mapping the flow of information in LLM groups
 ## Overview
 We present a simple framework for analyzing the diffusion of information through a group of LLM agents. One agent starts with private information about the correct answer, while the rest guess at random. Agents interact in pairs over multiple rounds to share information and potentially update guesses based on information received from others. Through pairwise interactions without replacement, in the ideal case, this correct answer should be disseminated throughout the group. The simulation explores whether the group can converge to a unanimous decision on the right answer, and if so how quickly. This project was developed as part of the Multi-Agent Security Hackathon
 
@@ -41,5 +41,5 @@ python main.py
 ```
 
 ## Credits
-This project was developed by Matthew Lutz and Nyasha Duri as part of the [Multi-Agent Security Research Sprint](https://alignmentjam.com/jam/masec) organized by [Apart Research](https://www.apartresearch.com/sprints). Our project report with preliminary results can be found [here](https://www.apartresearch.com/project/fishing-for-the-answer-mapping-the-flow-of-information-in-llm-agent-groups-using-lessons-from-fish-schools).
+This project was developed by Matthew Lutz and Nyasha Duri as part of the [Multi-Agent Security Research Sprint](https://alignmentjam.com/jam/masec) organized by [Apart Research](https://www.apartresearch.com/sprints). See our [project report](https://www.apartresearch.com/project/fishing-for-the-answer-mapping-the-flow-of-information-in-llm-agent-groups-using-lessons-from-fish-schools) with preliminary results for more.
 
