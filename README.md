@@ -1,13 +1,11 @@
 # Mapping information spread in LLM groups
 ## Overview
-We present a simple framework for analyzing the diffusion of information through a group of LLM agents.  
-
-This project simulates a multi-agent debate where agents interact in pairs over multiple rounds to share and update their guesses based on the information received from others. One agent starts with the correct answer, and through a series of pairwise interactions, the correct answer should be disseminated throughout the group. The simulation explores how quickly a group can converge to a unanimous decision, given the dynamics of information exchange and the agents' decision-making processes powered by OpenAI's GPT API.
+We present a simple framework for analyzing the diffusion of information through a group of LLM agents. One agent starts with private information about the correct answer, while the rest guess at random. Agents interact in pairs over multiple rounds to share information and potentially update guesses based on information received from others. Through pairwise interactions without replacement, in the ideal case, this correct answer should be disseminated throughout the group. The simulation explores whether the group can converge to a unanimous decision on the right answer, and if so how quickly. This project was developed as part of the Multi-Agent Security Hackathon
 
 ## Structure
 The project consists of three Python scripts:
-* `debate_manager.py` defines the `DebateManager` class, which manages the simulation of a group debate where agents iteratively exchange information, via pairwise interactions.
-* `agent.py`
+* `debate_manager.py` defines the `DebateManager` class, which manages the simulation of a group debate where agents exchange information over multiple rounds, via pairwise interactions.
+* `agent.py`  
 * `main.py` 
 
 ## Requirements
@@ -19,7 +17,7 @@ pip install python-dotenv matplotlib numpy requests
 ```
 
 ### API Keys
-This project requires OpenAI API access to use the GPT models (and can be modified for other LLMs). Using these APIs requires the corresponding API keys, which should be provided as environment variables stored in a '.env' file in the project directory or your home directory. This file, ignored by git for security, is a text file with key=value pairs, e.g.:
+This project requires OpenAI API access to use the GPT models (and can be modified for other LLMs). The corresponding API keys should be provided as environment variables stored in a '.env' file in the project directory or your home directory. This file, ignored by git for security, is a text file with key=value pairs, e.g.:
 
 ```
 OPENAI_API_KEY="sk-..."
@@ -41,4 +39,7 @@ To run, execute the main.py script:
 ```
 python main.py
 ```
+
+## Credits
+This project was developed by Matthew Lutz and Nyasha Duri as part of the [Multi-Agent Security Research Sprint](https://alignmentjam.com/jam/masec) organized by [Apart Research](https://www.apartresearch.com/sprints). See our project report, including preliminary results, [here](https://www.apartresearch.com/project/fishing-for-the-answer-mapping-the-flow-of-information-in-llm-agent-groups-using-lessons-from-fish-schools).  
 
