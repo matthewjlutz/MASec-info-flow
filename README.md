@@ -19,16 +19,16 @@ pip install python-dotenv matplotlib numpy requests
 ```
 
 ### API Keys
-This project makes API calls to OpenAI's GPT models, and can be modified to use other models. Use of these APIs requires the corresponding API keys, which you can provide as environment variables, stored in a '.env' file located in the project directory or your home directory. (This file is ignored by git by default). The file is a simple text file with key=value pairs, e.g.:
+This project requires OpenAI API access to use the GPT models (and can be modified for other LLMs). Using these APIs requires the corresponding API keys, which should be provided as environment variables stored in a '.env' file in the project directory or your home directory. This file, ignored by git for security, is a text file with key=value pairs, e.g.:
 
 ```
-OPENAI_API_KEY=sk-...
-OPENAI_API_ORG=org-...
-ANTHROPIC_API_KEY=sk-ant-...
+OPENAI_API_KEY="sk-..."
+OPENAI_API_ORG="org-..."
+ANTHROPIC_API_KEY="sk-ant-..."
 ...
 ```
 
-These variables can be imported from the `.env` file using the `dotenv` package as follows:
+These variables are imported from the `.env` file using the `dotenv` package:
 
 ```
 import dotenv
