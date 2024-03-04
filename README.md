@@ -1,12 +1,18 @@
 # Mapping the flow of information in LLM groups
 ## Overview
-We present a simple framework for analyzing the diffusion of information through a group of LLM agents. One agent starts with private information about the correct answer, while the rest guess at random. Agents interact in pairs over multiple rounds to share information and potentially update guesses based on information received from others. Through pairwise interactions without replacement, in the ideal case, this correct answer should be disseminated throughout the group. The simulation explores whether the group can converge to a unanimous decision on the right answer, and if so how quickly. This project was developed as part of the Multi-Agent Security Hackathon
+We present a simple experiment for analyzing the diffusion of information through a group of LLM agents. One agent starts with private information about the correct answer, while the rest guess at random. Agents interact in pairs over multiple rounds to share information and potentially update guesses based on information received from others. 
+
+In the ideal case, through pairwise interactions without replacement, this correct answer should rapidly spread through the group. The simulation explores whether groups of LLM agents can converge to a unanimous decision on the right answer, and if so how quickly.
 
 ## Structure
 The project consists of three Python scripts:
 * `debate_manager.py` defines the `DebateManager` class, which manages the simulation of a group debate where agents exchange information over multiple rounds, via pairwise interactions.
-* `agent.py`  
-* `main.py` 
+* `agent.py` defines the `Agent` class, which models an LLM-based agent interacting, using a prompt and API call to decide whether or not to update based on new information.
+* `main.py` The `main` function specifies adjustable parameters, then runs multiple iterations of the simulation when executed
+
+### Parameters
+The adjustable parameters in the `main` function are:
+
 
 ## Requirements
 ### Dependencies
