@@ -28,7 +28,7 @@ ANTHROPIC_API_KEY="sk-ant-..."
 
 These variables are imported from the `.env` file using the `dotenv` package:
 
-```
+```python
 import dotenv
 dotenv.load_dotenv()
 ```
