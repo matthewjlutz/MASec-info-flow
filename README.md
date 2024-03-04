@@ -7,11 +7,13 @@ In the ideal case, through pairwise interactions without replacement, this corre
 ## Structure
 The project consists of three Python scripts:
 * `debate_manager.py` defines the `DebateManager` class, which manages the simulation of a group debate where agents exchange information over multiple rounds, via pairwise interactions.
-* `agent.py` defines the `Agent` class, which models an LLM-based agent interacting, using a prompt and API call to decide whether or not to update based on new information.
-* `main.py` The `main` function specifies adjustable parameters, then runs multiple iterations of the simulation when executed
+* `agent.py` defines the `Agent` class, which models an LLM-based agent interacting, deciding whether or not to update based on new information via prompt and API call.
+* `main.py` The `main` function specifies adjustable parameters, then runs multiple iterations of the simulation when executed.
 
 ### Parameters
 The adjustable parameters in the `main` function are:
+`NUM_AGENTS` - Total number of agents in the group. Given the pairwise interactions, this should be an even integer (tested up to N = 16).
+`NUM_ROUNDS` - 
 
 
 ## Requirements
