@@ -23,7 +23,7 @@ Adjustable parameters in the `main` function are:
 | <img width="100%" src="results/4agents_8rounds_temp02.png"> | <img width="100%" src="results/16agents_8round_temp02.png">   |    Temp = 0.2    |
 | <img width="100%" src="results/4agents_8rounds_temp12.png"> | <img width="100%" src="results/16agents_8_rounds_temp12.png"> |    Temp = 1.2    |
 
-We found that overall performance (measured as proportion with correct answer and time to convergence) decreased with larger group sizes and higher temperatures. Further, we observed the spontaneous emergence of misinformation (agents claiming to hear the wrong answer from a reliable source), which was also associated with higher temperatures. See [project report](https://www.apartresearch.com/project/fishing-for-the-answer-mapping-the-flow-of-information-in-llm-agent-groups-using-lessons-from-fish-schools) for more results and discussion. 
+We found that overall performance (measured as proportion with correct answer and time to convergence) decreased with larger group sizes and higher temperatures. Further, we observed the spontaneous emergence of misinformation (agents claiming to hear the wrong answer from a reliable source), which was also associated with higher temperatures. See [Project Report](https://www.apartresearch.com/project/fishing-for-the-answer-mapping-the-flow-of-information-in-llm-agent-groups-using-lessons-from-fish-schools) for more results and discussion. 
 
 ## Requirements
 ### Dependencies
