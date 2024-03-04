@@ -8,13 +8,13 @@ In the ideal case, through pairwise interactions without replacement, this corre
 The project consists of three Python scripts:
 * `debate_manager.py` defines the `DebateManager` class, which manages the simulation of a group debate where agents exchange information over multiple rounds, via pairwise interactions.
 * `agent.py` defines the `Agent` class, which models an LLM-based agent interacting, deciding whether or not to update based on new information via prompt and API call.
-* `main.py` The `main` function specifies adjustable parameters, then runs multiple iterations of the simulation when executed.
+* `main.py` The `main` function specifies adjustable parameters, then runs multiple iterations of the simulation when executed. Includes plot functions.
 
 ### Parameters
 Adjustable parameters in the `main` function are:
 * `NUM_AGENTS` - Group size. Given the pairwise interactions, this should be an even integer (tested up to N = 16).
 * `NUM_ROUNDS` - Number of discussion rounds per simulation (tested with 8 rounds).
-* `NUM_SIMULATIONS` -  
+* `NUM_SIMULATIONS` - Total number of simulations to run for each combination of parameters. For plotting, each run is shown with a light color, with means from all runs overlayed as a darker line and dots (current plots show results from 6 runs).   
 
 ## Results
 
@@ -34,12 +34,10 @@ pip install python-dotenv matplotlib numpy requests
 ```
 
 ### API Keys
-This project requires OpenAI API access for the GPT models and can be modified to use other LLMs. The corresponding API keys should be provided as environment variables stored in a '.env' file in the project directory or your home directory. This file, ignored by git for security, is a text file with key=value pairs, e.g.:
+This project requires OpenAI API access for the GPT models and can be modified to use other LLMs. The corresponding API keys should be provided as environment variables stored in a '.env' file, which is ignored by git for security, in the project or home directory. This should be a text file with key=value pairs, e.g.:
 
 ```
 OPENAI_API_KEY="sk-..."
-OPENAI_API_ORG="org-..."
-ANTHROPIC_API_KEY="sk-ant-..."
 ...
 ```
 
