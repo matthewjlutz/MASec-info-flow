@@ -17,7 +17,7 @@ pip install python-dotenv matplotlib numpy requests
 ```
 
 ### API Keys
-This project requires OpenAI API access to use the GPT models (and can be modified for other LLMs). The corresponding API keys should be provided as environment variables stored in a '.env' file in the project directory or your home directory. This file, ignored by git for security, is a text file with key=value pairs, e.g.:
+This project requires OpenAI API access for the GPT models and can be modified to use other LLMs. The corresponding API keys should be provided as environment variables stored in a '.env' file in the project directory or your home directory. This file, ignored by git for security, is a text file with key=value pairs, e.g.:
 
 ```
 OPENAI_API_KEY="sk-..."
@@ -41,5 +41,5 @@ python main.py
 ```
 
 ## Credits
-This project was developed by Matthew Lutz and Nyasha Duri as part of the [Multi-Agent Security Research Sprint](https://alignmentjam.com/jam/masec) organized by [Apart Research](https://www.apartresearch.com/sprints). See our project report, including preliminary results, [here](https://www.apartresearch.com/project/fishing-for-the-answer-mapping-the-flow-of-information-in-llm-agent-groups-using-lessons-from-fish-schools).  
+This project was developed by Matthew Lutz and Nyasha Duri as part of the [Multi-Agent Security Research Sprint](https://alignmentjam.com/jam/masec) organized by [Apart Research](https://www.apartresearch.com/sprints). Our project report with preliminary results can be found [here](https://www.apartresearch.com/project/fishing-for-the-answer-mapping-the-flow-of-information-in-llm-agent-groups-using-lessons-from-fish-schools).
 
