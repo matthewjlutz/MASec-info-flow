@@ -1,6 +1,6 @@
-# Mapping information flow in LLM groups
+# Mapping information spread in LLM groups
 ## Overview
-We present a simple framework for analyzing the diffusion of information through a group of LLM agents. 
+We present a simple framework for analyzing the diffusion of information through a group of LLM agents.  
 
 This project simulates a multi-agent debate where agents interact in pairs over multiple rounds to share and update their guesses based on the information received from others. One agent starts with the correct answer, and through a series of pairwise interactions, the correct answer should be disseminated throughout the group. The simulation explores how quickly a group can converge to a unanimous decision, given the dynamics of information exchange and the agents' decision-making processes powered by OpenAI's GPT API.
 
@@ -12,7 +12,7 @@ API Integration: Utilizes OpenAI's GPT API to simulate agent reasoning, making t
 
 ## Requirements
 ### Dependencies
-This project requires Python 3 and the packages `requests`, `matplotlib`, and `numpy`. These can be installed using pip or another package manager:
+This project requires Python 3 and the packages `requests`, `matplotlib`, and `numpy`, which can be installed using pip or another package manager:
 
 ```
 pip install requests matplotlib numpy
@@ -22,7 +22,7 @@ pip install requests matplotlib numpy
 API Key: You'll need an API key from OpenAI. Set it in the code where indicated.
 
 ## Usage
-To run the simulation, execute the main.py script:
+To run, execute the main.py script:
 
 ```
 python main.py
