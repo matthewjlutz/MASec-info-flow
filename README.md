@@ -1,4 +1,4 @@
-# Tracking Information Flow in LLM Groups over Multiple Interaction Rounds
+# Fishing for the answer: Mapping the flow of information in LLM agent groups using lessons from fish schools
 ## Project Overview
 This project simulates a multi-agent debate where agents interact in pairs over multiple rounds to share and update their guesses based on the information received from others. One agent starts with the correct answer, and through a series of pairwise interactions, the correct answer should be disseminated throughout the group. The simulation explores how quickly a group can converge to a unanimous decision, given the dynamics of information exchange and the agents' decision-making processes powered by OpenAI's GPT API.
 
