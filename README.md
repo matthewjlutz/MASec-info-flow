@@ -12,14 +12,28 @@ API Integration: Utilizes OpenAI's GPT API to simulate agent reasoning, making t
 
 ## Requirements
 ### Dependencies
-This project requires Python 3 and the packages `requests`, `matplotlib`, and `numpy`, which can be installed using pip or another package manager:
+This project requires Python 3.9+ and packages `dotenv`, `matplotlib`, `numpy`, and `requests`, which can be installed using pip:
 
 ```
-pip install requests matplotlib numpy
+pip install python-dotenv matplotlib numpy requests
 ```
 
-### API Key
-API Key: You'll need an API key from OpenAI. Set it in the code where indicated.
+### API Keys
+This project makes API calls to OpenAI's GPT models, and can be modified to use other models. Use of these APIs requires the corresponding API keys, which you can provide as environment variables, stored in a '.env' file located in the project directory or your home directory. (This file is ignored by git by default). The file is a simple text file with key=value pairs, e.g.:
+
+```
+OPENAI_API_KEY=sk-...
+OPENAI_API_ORG=org-...
+ANTHROPIC_API_KEY=sk-ant-...
+...
+```
+
+These variables can be imported from the `.env` file using the `dotenv` package as follows:
+
+```
+import dotenv
+dotenv.load_dotenv()
+```
 
 ## Usage
 To run, execute the main.py script:
