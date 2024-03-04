@@ -16,7 +16,8 @@ Dependencies: This project requires Python 3.x and the following packages: reque
 
 ## Usage
 To run the simulation, execute the main.py script:
-'''
+
+```
 python main.py
-'''
+```
 
