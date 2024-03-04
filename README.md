@@ -15,7 +15,7 @@ Adjustable parameters in the `main` function are:
 * `NUM_AGENTS` - Group size. Given the pairwise interactions, this should be an even integer (tested up to N = 16).
 * `NUM_ROUNDS` - Number of discussion rounds per simulation (tested with 8 rounds).
 * `NUM_SIMULATIONS` - Total number of simulations to run for each combination of parameters. For plotting, each run is shown with a light color, with means from all runs overlayed as a darker line and dots (current plots show results from 6 runs).
-* `CORRECT_ANSWER` - Private information initially given to one agent. Should be an integer from 1-100 (within the guessing range of other agents).
+* `CORRECT_ANSWER` - Private information initially given to one agent. Currently an integer from 1-100 (guessing range of other agents).
 * `TEMPERATURE` - Hyperparameter controlling determinism of LLM responses (lower values are more deterministic). For OpenAI models, ranges from 0.0 - 2.0 (tested at 0.2 and 1.2).
 
 ## Results
