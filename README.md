@@ -11,8 +11,15 @@ Convergence Tracking: The system tracks and plots the number of agents with the 
 API Integration: Utilizes OpenAI's GPT API to simulate agent reasoning, making the interactions dynamic and unpredictable.
 
 ## Requirements
+### Dependencies
+This project requires `Python 3.x` and the packages ` requests, matplotlib' and 'numpy `. These can be installed using pip or another package manager:
+
+```
+pip install requests matplotlib numpy
+```
+
+### API Key
 API Key: You'll need an API key from OpenAI. Set it in the code where indicated.
-Dependencies: This project requires Python 3.x and the following packages: requests, matplotlib, numpy, and re. Install them using pip.
 
 ## Usage
 To run the simulation, execute the main.py script:
