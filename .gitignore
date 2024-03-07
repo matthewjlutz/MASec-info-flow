@@ -1,0 +1,15 @@
+# environment variables
+.env
+
+# original results plots
+results/
+
+# VSCode
+.vscode
+
+# Python
+*.ipynb_checkpoints
+*__pycache__
+
+# MacOS
+*.DS_Store
